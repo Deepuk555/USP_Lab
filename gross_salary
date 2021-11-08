@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "Enter basic salary:"
+read bs
+echo "Enter house rent allowance:"
+read hra
+echo "Enter leave travel allowance:"
+read lta
+echo "Enter income tax:"
+read it
+echo "Enter professional tax:"
+read pt
+
+gross=$(echo "$bs+$lta+$hra-$it-$pt"|bc)
+echo "gross salary is $gross"
