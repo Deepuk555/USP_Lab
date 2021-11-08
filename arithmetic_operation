@@ -1,0 +1,37 @@
+#!/bin/sh
+echo "Enter first number:"
+read num1
+echo "Enter second number:"
+read num2
+
+choice=-1
+
+while [ $choice -ne 5 ]
+do
+echo "1. Addition"
+echo "2. subtraction"
+echo "3. multiplication"
+echo "4. division"
+echo "5. exit"
+read choice
+
+if [ $choice -eq 1 ]
+then
+n=$((num1+num2))
+echo "$n"
+elif [ $choice -eq 2 ]
+then
+n=$((num1-num2))
+echo "$n"
+elif [ $choice -eq 3 ]
+then
+n=$((num1*num2))
+echo "$n"
+elif [ $choice -eq 4 ]
+then
+n=$((num1/num2))
+echo "$n"
+else
+	echo "Exiting"
+fi
+done
