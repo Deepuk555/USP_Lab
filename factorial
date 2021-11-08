@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "Enter a number:"
+read num
+n=1
+
+while [ $num -gt 1 ]
+do
+n=$((num * n))
+num=$((num - 1))
+done
+echo "$n"
