@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "enter num :"
+read num
+echo "enter power :"
+read pow
+res=1
+i=1
+while [ $i -le $pow ]
+do
+    res=$((res*num))
+    i=$((i+1))
+done
+echo "$res"
